@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { auth } from '../firebaseConfig';
-import { parsedErroressage } from 'utils/utils';
+import { parsedErroressage } from '../utils/utils';
 
 export const useSignup = () => {
   const [error, setError] = useState('');

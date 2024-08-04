@@ -8,8 +8,8 @@ import {
 import { Box } from '@mui/material';
 import { User } from 'firebase/auth';
 import { auth } from './firebaseConfig';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Login from './pages/LoginPage';
+import Signup from './pages/SignupPage';
 import WelcomePage from './pages/WelcomePage';
 import ProfilePage from './pages/ProfilePage';
 import Loading from './components/general/Loading';

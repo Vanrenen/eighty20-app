@@ -1,8 +1,7 @@
 import { Container } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/general/Header';
 import Profile from '../components/Profile';
-import { useNavigate } from 'react-router-dom';
-
 
 const ProfilePage = () => {
   const navigate = useNavigate()

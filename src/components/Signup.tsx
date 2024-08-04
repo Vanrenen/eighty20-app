@@ -7,7 +7,7 @@ import {
 } from '@mui/material';
 import FormContainer from './general/FormContainer';
 import { useNavigate } from 'react-router-dom';
-import { useSignup } from 'hooks/useSignup';
+import { useSignup } from '../hooks/useSignup';
 import Loading from './general/Loading';
 import styles from '../styles/Signup.module.scss';
 

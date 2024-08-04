@@ -1,7 +1,7 @@
 
 import React, { Dispatch, SetStateAction, useState } from 'react';
 import { Box, Button, Modal, Typography } from '@mui/material';
-import { usePasswordUpdate } from 'hooks/usePassword';
+import { usePasswordUpdate } from '../hooks/usePassword';
 import Loading from './general/Loading';
 import styles from '../styles/ChangePasswordModal.module.scss';
 
