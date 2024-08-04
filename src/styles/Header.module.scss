@@ -1,0 +1,21 @@
+.headerContainer {
+  flex-grow: 1;
+}
+
+.appBarContent {
+  padding: 15px;
+}
+
+.titleContainer {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.button {
+  float: right;
+  line-height: 35px!important;
+}

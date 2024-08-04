@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Introduction
+This project is a single-page application built with React and TypeScript as the front end.  
+Graphql as the api layer.   
+This project was taken from a previously created project and adapted to the DVT assessment needs.  
+The user can register and log in with your user details as this is saved in the database.  
+The cart only persists during a session as it is not added to the database yet. At which point a cart and user would be linked based on user id.  
+At checkout, only a modal is shown as there is no payment gateway added.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started
+## Prerequisites
+Node.js (>= 14.x) (https://nodejs.org/)  
+npm (>= 6.x)  
 
-## Available Scripts
+## Installation
+### Clone the repository:
+git clone https://github.com/Vanrenen/derivco-app.git  
+cd derivco-app
 
-In the project directory, you can run:
+## Running the app
+The app can be run from root by typing "npm start". With the help of "concurrently", this will trigger both the UI and server to run.  
+Alternatively, you can navigate in to the ui and server folders respectively and run "npm start" from each folder to run the ui and server.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Introduction
+This project is a single-page application built with React and TypeScript as the front end.   
+It follows the path of login in or register a new user.  
+When succesfull, you will be greeted with a list of available products which can be filtered by category.  
+When selecting a product, you will navigate to the product page that shows more details of the product.   
+Interaction with the cart can be done at either these pages, which is accessible via a button at the top right of the header.  
+Log in status persists via a token until the logout button is selected from the header.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Getting Started
+## Prerequisites
+Node.js (>= 14.x) (https://nodejs.org/)  
+npm (>= 6.x)  
 
-### `npm test`
+# Installation
+## Install dependencies:
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Techstack
+React (^17.0.2)  
+Typescript (^4.9.5)  
+Emotion/React (^11.13.0)  
+MUI/material (^5.16.5)  
 
-### `npm run build`
+## Setup environment variables:
+Create a .env file in the root directory and add your environment variables:  
+.env  
+This file contains environment-specific settings. Here's a sample:  
+GRAPHQL_API_API=
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Caching
+React-query is used for caching in the frontend.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Testing
+Testing is done using jest where some simple unit tests were included.
+To run the tests simply type in "npm run test"
